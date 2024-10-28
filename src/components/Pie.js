@@ -1,12 +1,12 @@
-import { Bar } from "react-chartjs-2";
+import { Pie } from "react-chartjs-2";
 
 import { Chart as ChartJS, Tooltip, Legend, ArcElement } from "chart.js";
-import { barChartData } from "../data/test_data";
+import { pieChartData } from "../data/test_data";
 
 ChartJS.register(Tooltip, Legend, ArcElement);
 
-export const Pie = () => {
-    const options = {};
+export const PieChart = () => {
+  const options = {};
 
-    return <Bar options={options} data={} />;
-}
+  return <Pie options={options} data={pieChartData} />;
+};

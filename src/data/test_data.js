@@ -88,6 +88,7 @@ export const pieChartData = {
         "rgba(153, 102, 255, 1)",
       ],
       borderWidth: 1,
+      hoverOffset: 4,
     },
   ],
 };
