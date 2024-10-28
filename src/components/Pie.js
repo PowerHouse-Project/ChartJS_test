@@ -6,7 +6,18 @@ import { pieChartData } from "../data/test_data";
 ChartJS.register(Tooltip, Legend, ArcElement);
 
 export const PieChart = () => {
-  const options = {};
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: "bottom",
+      },
+      title: {
+        display: true,
+        text: "This is a Pie Chart",
+      },
+    },
+  };
 
   return <Pie options={options} data={pieChartData} />;
 };
