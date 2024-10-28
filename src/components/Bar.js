@@ -9,7 +9,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import { lineChartData } from "../data/test_data";
+import { barChartData } from "../data/test_data";
 
 ChartJS.register(
   CategoryScale,
@@ -21,5 +21,6 @@ ChartJS.register(
 );
 
 export const BarGraph = () => {
-    return <Bar options={} data=
-}
+  const options = {};
+  return <Bar options={options} data={barChartData} />;
+};
