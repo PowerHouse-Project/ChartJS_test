@@ -30,3 +30,16 @@ export const lineChartData = {
     },
   ],
 };
+
+export const barChartData = {
+    labels: ["Smart Light", "Smart AC", "Smart Fridge", "Smart TV", "Smart Oven", "Smart Washing Machine"],
+    datasets: [
+        {
+            label: "Current Month (KwH)",
+            data: [33, 25, 35, 51, 14, 76],
+            backgroundColor: "rgba(255, 99, 132, 0.2)",
+            borderColor: "rgba(255, 99, 132, 1)",
+            borderWidth: 1,
+        },
+    ]
+}
